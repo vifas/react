@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
 
         function MeuComponente2() {
             return (
-                React.createElement(`div`, null,
+                React.createElement(`div`, {className: `componente-2`},
                 React.createElement(MeuComponente3)
                 )
             )    
@@ -29,19 +29,19 @@
 
         function MeuComponente3() {
             return (
-                React.createElement(`div`, null,
+                React.createElement(`div`, {className: `componente-3`},
                 React.createElement(MeuComponente4)
                 )
             )    
         }
 
         function MeuComponente4() {
-            return React.createElement(`p`, null, `Componente 4`)
+            return React.createElement(`p`, {className: `componente-4`}, `Componente 4`)
         }
 
         function MeuComponente() {
           return (
-              React.createElement(`div`,null,
+              React.createElement(`div`,{id: `componentes`},
               React.createElement(MeuComponente4)
             )
           )
